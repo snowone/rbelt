@@ -1,0 +1,22 @@
+#!/usr/bin/env node
+
+"use strict";
+
+var path  = require('path');
+var fs    = require('fs');
+
+var lib   = path.join(path.dirname(fs.realpathSync(__filename)), '../lib');
+var rbelt = require(lib + '/rbelt.js');
+var help  = require(lib + '/help.js');
+
+process.title = 'rbelt';
+
+console.log('cli parameters: [' + process.argv + ']');
+
+if (process.argv.length === 2) {
+  // if there is no parameter at all, show help message
+  help.run();
+} else {
+  // otherwise run the command
+  rbelt.load(process.argv[2], process.argv.slice(3));
+}

@@ -1,0 +1,45 @@
+{
+  "name": "rbelt",
+  "description": "The Reviewer's Toolbelt for [topcoder]",
+  "version": "0.0.1",
+  "author": "Xiuhua Zhang",
+  "homepage": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/snowone/rbelt.git"
+  },
+  "bugs": {
+    "url": "https://github.com/snowone/rbelt/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/snowone/rbelt/blob/master/LICENSE"
+    }
+  ],
+  "main": "lib/rbelt",
+  "scripts": {
+  },
+  "bin": {
+    "rbelt": "./bin/rbelt"
+  },
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "keywords": [
+    "reviewer",
+    "topcoder",
+    "review",
+    "tool"
+  ],
+  "dependencies": {
+    "cheerio": ">= 0.18.0",
+    "async": ">= 0.9.0",
+    "request": ">= 2.48.0",
+    "tough-cookie": ">= 0.12.1",
+    "tough-cookie-filestore": ">= 0.0.1",
+    "colors": ">= 1.0.3"
+  },
+  "devDependencies": {
+  }
+}
