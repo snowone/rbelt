@@ -16,6 +16,8 @@ Reviewer tool belt for [topcoder](http://topcoder.com).
 ### List
 Show all the review oppotunities for a given track.
 
-    bin/rbelt list track_id
+    bin/rbelt list track_id [filter]
 
-example: ```bin/rbelt list 14```
+example: ```bin/rbelt list 14 open```
+
+```list``` support filters: ```open```,```mine```,```all```. If no filter is set, it will be ```all```.
